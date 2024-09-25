@@ -17,7 +17,7 @@ function ProjectListPage() {
       // const response = await fetch("https://project-management-api-4641927fee65.herokuapp.com/projects");
       // const data = await response.json();
       const {data} = await axios.get(`${import.meta.env.VITE_SERVER_URL}/projects`)
-      console.log(data);
+      // console.log(data);
       setAllProjects(data)
 
     } catch (error) {
